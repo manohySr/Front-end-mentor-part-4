@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Outfit&family=Roboto&display=swap");
+
+$color-white: hsl(0, 0%, 98%);
+$color-gray: hsl(0, 0%, 41%);
+$color-black: hsl(0, 0%, 8%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem 5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  //   font-weight: 700;
+  color: $color-gray;
+  margin-bottom: 5rem;
+  &-logo {
+    width: 8rem;
+    margin-top: 1rem;
+  }
+  &-navigation {
+    width: 65%;
+    display: flex;
+
+    &__link {
+      &:not(:first-child) {
+        margin-left: 5rem;
+      }
+    }
+  }
+
+  &-auth {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &__login {
+      margin-right: 5rem;
+    }
+    &__register {
+      border: 2px solid $color-gray;
+      padding: 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-black;
+        border: 2px solid $color-black;
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+
+.main-item-1 {
+  width: 100%;
+  //   padding: 1rem 10rem;
+  padding-left: 11rem;
+  margin-right: auto;
+
+  position: relative;
+
+  &__title {
+    &--make {
+      display: block;
+      color: $color-black;
+    }
+    display: inline-block;
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 10rem;
+    width: 100%;
+  }
+  &__description {
+    font-size: 1.6rem;
+    color: $color-gray;
+    margin: 5rem 0;
+    width: 90%;
+    line-height: 2.5rem;
+    padding-right: 8rem;
+  }
+  &__button {
+    font-size: 1.6rem;
+    color: $color-white;
+    background-color: $color-black;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+      border: 2px solid $color-black;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: absolute;
+  bottom: 0;
+
+  &__item {
+    width: 8rem;
+  }
+}
+
+.main-item-2 {
+  width: 100%;
+
+  &__image {
+    background-image: url(./../assets/images/image-hero-desktop.png);
+    width: 50rem;
+    height: 75vh;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-left: auto;
+
+    // background-color: blueviolet;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

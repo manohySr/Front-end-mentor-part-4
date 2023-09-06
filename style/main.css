@@ -348,7 +348,7 @@ button {
   .main-item-1__button {
     display: flex;
     justify-content: center;
-    width: 15rem;
+    width: 18rem;
     margin: auto;
   }
 }

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Outfit&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Epilogue", sans-serif;
+  color: dimgray;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem 5rem;
+  background-color: #fafafa;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: dimgray;
+  margin-bottom: 5rem;
+}
+.header-logo {
+  width: 8rem;
+  margin-top: 1rem;
+}
+.header-navigation {
+  width: 65%;
+  display: flex;
+}
+.header-navigation__link {
+  cursor: pointer;
+}
+.header-navigation__link:hover {
+  color: #141414;
+}
+.header-navigation__link--text:hover::after {
+  background-color: #141414;
+}
+.header-navigation__link:not(:first-child) {
+  margin-left: 5rem;
+}
+.header-navigation__link--text {
+  position: relative;
+}
+.header-navigation__link--text::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.5rem;
+  width: 1.2rem;
+  height: 1rem;
+  position: absolute;
+  top: 35%;
+  background-color: dimgray;
+  mask-image: url(./../assets//images/icon-arrow-down.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+.header-auth {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.header-auth__login {
+  margin-right: 5rem;
+  cursor: pointer;
+}
+.header-auth__login:hover {
+  color: #141414;
+}
+.header-auth__register {
+  border: 2px solid dimgray;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.header-auth__register:hover {
+  color: #141414;
+  border: 2px solid #141414;
+}
+
+.container-dropdown--features {
+  position: relative;
+}
+
+.container-dropdown--company {
+  position: relative;
+  margin-left: 5rem;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(105, 105, 105, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+.dropdown__item {
+  display: flex;
+}
+.dropdown__item:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.dropdown__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.dropdown__text {
+  margin-left: 1rem;
+}
+.dropdown--features {
+  margin-left: -5rem;
+  display: none;
+}
+.dropdown--company {
+  width: 10rem;
+  padding: 2rem 1rem;
+  display: none;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+
+.main-item-1 {
+  width: 100%;
+  padding-left: 11rem;
+  margin-right: auto;
+  position: relative;
+}
+.main-item-1__title {
+  display: inline-block;
+  font-size: 8rem;
+  font-weight: 700;
+  margin-top: 10rem;
+  width: 100%;
+}
+.main-item-1__title--make {
+  display: block;
+  color: #141414;
+}
+.main-item-1__description {
+  font-size: 1.6rem;
+  color: dimgray;
+  margin: 5rem 0;
+  width: 90%;
+  line-height: 2.5rem;
+  padding-right: 8rem;
+}
+.main-item-1__button {
+  font-size: 1.6rem;
+  color: #fafafa;
+  background-color: #141414;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.main-item-1__button:hover {
+  background-color: #fafafa;
+  color: #141414;
+  border: 2px solid #141414;
+  border-radius: 1rem;
+}
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: absolute;
+  bottom: 0;
+}
+.sponsor__item {
+  width: 8rem;
+}
+
+.main-item-2 {
+  width: 100%;
+}
+.main-item-2__image {
+  background-image: url(./../assets/images/image-hero-desktop.png);
+  width: 50rem;
+  height: 75vh;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+
+.attribution a {
+  color: #3e52a3;
+}

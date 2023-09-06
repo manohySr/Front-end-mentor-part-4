@@ -1,5 +1,12 @@
   Features
+    Todo list
+    Calendar
+    Reminders
+    Planning
   Company
+    History
+    Our team
+    Blog
   Careers
   About
 

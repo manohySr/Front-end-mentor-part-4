@@ -12,6 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./style/main.css" />
+    <script src="./index.js" defer></script>
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
@@ -23,18 +24,173 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
 
+    <div class="mobile__menu-navigation">
+      <div class="mobile__menu-navigation__item">
+        <div class="mobile__menu-navigation__item--0">
+          <img
+            src="./assets/images/icon-close-menu.svg"
+            alt=""
+            srcset=""
+            class="mobile__close-icon"
+          />
+        </div>
+        <div class="mobile__menu-navigation__item--1">
+          <div class="container-dropdown--features">
+            <button
+              class="header-navigation__link header-navigation__link--text features-mobile"
+            >
+              Features
+            </button>
+            <!-- <span class="header-navigation__link--icon"></span> -->
+            <div class="dropdown dropdown--features--mobile">
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-todo.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Todo list</span>
+              </div>
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-calendar.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Calendar</span>
+              </div>
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-reminders.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Reminders</span>
+              </div>
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-planning.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Planning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile__menu-navigation__item--2">
+          <div class="container-dropdown--company">
+            <button
+              class="header-navigation__link header-navigation__link--text company-mobile"
+            >
+              Company
+            </button>
+            <div class="dropdown dropdown--company--mobile">
+              <div class="dropdown__item">
+                <span class="dropdown__text">History</span>
+              </div>
+              <div class="dropdown__item">
+                <span class="dropdown__text">Our team</span>
+              </div>
+              <div class="dropdown__item">
+                <span class="dropdown__text">Blog</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile__menu-navigation__item--3">
+          <button class="header-navigation__link">Careers</button>
+        </div>
+        <div class="mobile__menu-navigation__item--4">
+          <button class="header-navigation__link">About</button>
+        </div>
+        <div class="mobile__menu-navigation__item--5">
+          <button class="header-navigation__link">
+            <button class="header-auth__login">Login</button>
+          </button>
+        </div>
+        <div class="mobile__menu-navigation__item--6">
+          <button class="header-navigation__link">
+            <button class="header-auth__register">Register</button>
+          </button>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="header">
         <img src="./assets/images/logo.svg" alt="" class="header-logo" />
-        <div class="header-navigation">
-          <div class="header-navigation__link">Features</div>
-          <div class="header-navigation__link">Company</div>
-          <div class="header-navigation__link">Careers</div>
-          <div class="header-navigation__link">About</div>
+        <div class="header-navigation none-mobile">
+          <div class="container-dropdown--features">
+            <button
+              class="header-navigation__link header-navigation__link--text features"
+            >
+              Features
+            </button>
+            <!-- <span class="header-navigation__link--icon"></span> -->
+            <div class="dropdown dropdown--features">
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-todo.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Todo list</span>
+              </div>
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-calendar.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Calendar</span>
+              </div>
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-reminders.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Reminders</span>
+              </div>
+              <div class="dropdown__item">
+                <img
+                  src="./assets/images/icon-planning.svg"
+                  class="dropdown__icon"
+                />
+                <span class="dropdown__text">Planning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-dropdown--company">
+            <button
+              class="header-navigation__link header-navigation__link--text company"
+            >
+              Company
+            </button>
+            <div class="dropdown dropdown--company">
+              <div class="dropdown__item">
+                <span class="dropdown__text">History</span>
+              </div>
+              <div class="dropdown__item">
+                <span class="dropdown__text">Our team</span>
+              </div>
+              <div class="dropdown__item">
+                <span class="dropdown__text">Blog</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="header-navigation__link">Careers</button>
+          <button class="header-navigation__link">About</button>
         </div>
-        <div class="header-auth">
-          <div class="header-auth__login">Login</div>
-          <div class="header-auth__register">Register</div>
+        <div class="header-auth none-mobile">
+          <button class="header-auth__login">Login</button>
+          <button class="header-auth__register">Register</button>
+        </div>
+
+        <div class="mobile">
+          <img
+            src="./assets/images/icon-menu.svg"
+            alt=""
+            srcset=""
+            class="mobile__menu-icon"
+          />
         </div>
       </div>
 

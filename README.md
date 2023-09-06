@@ -10,7 +10,6 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -24,11 +23,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+![image](https://github.com/manohySr/Front-end-mentor-part-4/assets/86122918/9b807df7-6625-4889-aab5-cfdfb9935a4f)
 
 ### Links
 
 - Solution URL: (https://github.com/manohySr/Front-end-mentor-part-4)
-- Live Site URL: (https://front-end-mentor-part-3.netlify.app/)
+- Live Site URL: ([https://front-end-mentor-part-4.netlify.app/](https://front-end-mentor-part-4.netlify.app/))
 
 ## My process
 
